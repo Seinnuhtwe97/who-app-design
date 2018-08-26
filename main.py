@@ -17,9 +17,9 @@ def man():
 def writer():
     return render_template("writer.html")
 
-@myapp.route('/actor.hml')
+@myapp.route('/actor.html')
 def actor():
-    return render_template("actor.html")
+    return render_template("actor.htm")
 
 @myapp.route('/designer.html')
 def designer():
