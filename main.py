@@ -8,28 +8,28 @@ def home():
 
 
 @myapp.route("/political.html")
-def home():
+def political():
     return render_template("political.html")
 
 
 
 @myapp.route("/man.html")
-def home():
+def man():
     return render_template("man.html")
 
 
 @myapp.route("/writer.html")
-def home():
+def writer():
     return render_template("writer.html")
 
 
 @myapp.route("/actor.html")
-def home():
+def actor():
     return render_template("actor.html")
 
 
 @myapp.route("/designer.html")
-def home():
+def designer():
     return render_template("designer.html")
 
 if __name__ =="__main__":
