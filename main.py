@@ -21,7 +21,7 @@ def writer():
 
 @app.route('/actor')
 def actor():
-    return render_template('actor.htm')
+    return render_template('actor.html')
 
 @app.route('/designer')
 def designer():
