@@ -1,27 +1,27 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-@myapp.route("/index")
+@app.route("/index")
 def index():
     return render_template("index.html")
 	
-@myapp.route("/political")
+@app.route("/political")
 def political():
 		return render_template("political.html")
 
-@myapp.route("/man")
+@app.route("/man")
 def man():
     return render_template("man.html")
 
-@myapp.route("/writer")
+@app.route("/writer")
 def writer():
     return render_template("writer.html")
 
-@myapp.route("/actor")
+@app.route("/actor")
 def actor():
     return render_template("actor.htm")
 
-@myapp.route("/designer")
+@app.route("/designer")
 def designer():
     return render_template("designer.html")
 
