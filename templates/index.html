@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="{{url_for('static', filename='css/material.min.css')}}">
-   <script src="{{url_for('static', filename='js/material.min.js')}}"></script>
+   <link rel="stylesheet" href="css/material.min.css">
+   <script src="js/material.min.js"></script>
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.css')}}"  media="screen,projection"/>
+ <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script type="text/javascript" src="{{url_for('static', filename='js/materialize.js')}}"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
    <title>Geo-Quantum</title>
   </head>
   <body>
@@ -29,11 +29,11 @@
      	<!-- Navigation. We hide it in small screens. -->
 	
       	<nav class="mdl-navigation mdl-layout--large-screen-only right">
-        	<a class="mdl-navigation__link" href="political.html">POLITICAL</a>
-        	<a class="mdl-navigation__link" href="writer.html">AUTHORS</a>
-        	<a class="mdl-navigation__link" href="man.html">BUSINESS LEADERS</a>
-			<a class="mdl-navigation__link" href="actor.html">CELEBRITIES</a>
-			<a class="mdl-navigation__link" href="designer.html">DESIGNER</a>
+        	<a class="mdl-navigation__link" href="{{(url_for('political')}}>POLITICAL</a>
+        	<a class="mdl-navigation__link" href="{{url_for('writer')}}">AUTHORS</a>
+        	<a class="mdl-navigation__link" href="{{url_for('man')}}">BUSINESS LEADERS</a>
+			<a class="mdl-navigation__link" href="{{url_for('actor')}}">CELEBRITIES</a>
+			<a class="mdl-navigation__link" href="{{url_for('designer')}}">DESIGNER</a>
 			
       	</nav>
     </div>
@@ -42,12 +42,12 @@
     	<span class="mdl-layout-title">Information</span>
     	<nav class="mdl-navigation">
       	
-      	<a class="mdl-navigation__link" href="political.html">POLITICAL</a>
-      	<a class="mdl-navigation__link" href="writer.html">AUTHORS </a>
-		<a class="mdl-navigation__link" href="man.html">BUSINESS LEADERS</a>
+      	<a class="mdl-navigation__link" href="{{url_for('political')}}">POLITICAL</a>
+      	<a class="mdl-navigation__link" href="{{url_for('writer')}}">AUTHORS </a>
+		<a class="mdl-navigation__link" href="{{url_for('man')}}">BUSINESS LEADERS</a>
 		<a
-        <a class="mdl-navigation__link" href="actor.html">CELEBRITIES</a>
-		<a class="mdl-navigation__link" href="designer.html">DESIGNER</a>
+        <a class="mdl-navigation__link" href="{{url_for('actor')}}">CELEBRITIES</a>
+		<a class="mdl-navigation__link" href="{{url_for('designer')}}">DESIGNER</a>
   	</nav>
 	</div>
 	
@@ -56,7 +56,7 @@
     <h2 class="header">Have a good day!</h2>
     <div class="card horizontal">
       <div class="card-image">
-        <img src="{{url_for('static', filename='images/people.jpg')}}">
+        <img src="images/people.jpg">
       </div>
       <div class="card-stacked">
         <div class="card-content">
