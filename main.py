@@ -7,28 +7,28 @@ def home():
     return render_template("index.html")
 
 
-@myapp.route("/politican")
+@myapp.route("/")
 def home():
     return render_template("political.html")
 
 
 
-@myapp.route("/business")
+@myapp.route("/")
 def home():
     return render_template("man.html")
 
 
-@myapp.route("/writer")
+@myapp.route("/")
 def home():
     return render_template("writer.html")
 
 
-@myapp.route("/actor")
+@myapp.route("/")
 def home():
     return render_template("actor.html")
 
 
-@myapp.route("/designer")
+@myapp.route("/")
 def home():
     return render_template("designer.html")
 
